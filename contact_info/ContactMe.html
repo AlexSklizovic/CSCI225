@@ -55,7 +55,7 @@
             <label><input type = "checkbox" name = "linkedin">LinkedIn</label><br>
 
             <!--<label>Rate my website!<input type ="range" name = "rating" min = "1" max = "10"></label>-->
-            <label>Rate my website!<input type ="range" name = "rating" min = "1" max = "10" list = "tickmarks"></label><br>
+            <label>Rate my website!<input type ="range" name = "rating" min = "1" max = "10" list = "tickmarks"></label><br><br>
             
             <datalist id="tickmarks">
                 <option value="1"></option>
@@ -70,15 +70,19 @@
                 <option value="10"></option>
               </datalist>
 
-              <label><select size = "1" name = "browser">
+              <label>Favorite Internet Browser?<select size = "1" name = "browser">
                   <option value = "Internet Explorer">Internet Explorer</option>
                   <option value = "Google Chrome">Google Chrome</option>
                   <option value = "Microsoft Edge">Microsoft Edge</option>
                   <option value = "Safari">Safari</option>
                   <option value = "FireFox">FireFox</option>
-              </select></label><br>
+              </select></label><br><br>
 
               <label><textarea name = "comment" rows = "10" cols = "20">Leave a comment here!</textarea></label><br>
+
+              <label>Tel:<input type = "tel" placeholder = "(###)###-####" pattern = "\(\d{3}\)\d{3}-\d{4}" required></label>
+
+              <label>Birthday<input type = "date" name = "birthday"></label><br>
 
               <input type = "submit" value = "Submit"><br>
         </form>
