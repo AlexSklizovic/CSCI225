@@ -42,8 +42,8 @@ address sections and put them in the center of page */
 
 .introH3{
     position: absolute;
-    top: 50%;
-    left: 80%;
+    top: 20%;
+    left: 20%;
 }
 
 th, td{
