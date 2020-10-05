@@ -72,8 +72,8 @@ th, td{
     display: block;
 }
 
-ul li{
+.navbar{
     display: inline-table;
-    padding-right: 40px;
+    padding: 40px;
     width: 100px;
 }
