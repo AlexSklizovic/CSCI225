@@ -47,6 +47,12 @@ address sections and put them in the center of page */
     transform: translate(-50%, -50%);
 }
 
+.contact{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
 th, td{
     border: 1px solid rgb(248,144,231);
     padding: 5px;
