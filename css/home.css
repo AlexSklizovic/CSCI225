@@ -43,7 +43,7 @@ address sections and put them in the center of page */
 .introH1{
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 80%;
 }
 
 th, td{
