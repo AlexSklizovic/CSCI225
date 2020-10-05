@@ -6,6 +6,10 @@ html{
     color: white;
 }
 
+h1{
+    color: rgb(11,211,211);
+}
+
 /* Position || Use absolute position style for introduction, portfolio, schedule, contact and
 address sections and put them in the center of page */
 .introduction{
@@ -47,10 +51,6 @@ th, td{
     border: 1px solid rgb(248,144,231);
     padding: 5px;
     text-align: center;
-}
-
-h1{
-    color: rgb(11,211,211);
 }
 
 .center{
