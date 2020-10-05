@@ -6,7 +6,7 @@ html{
     color: white;
 }
 
-h3{
+h1{
     color: rgb(11,211,211);
 }
 
@@ -40,7 +40,7 @@ address sections and put them in the center of page */
     transform: translate(-50%, -50%);
 }
 
-.introH3{
+.introH1{
     position: absolute;
     top: 20%;
     left: 20%;
