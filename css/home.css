@@ -40,14 +40,7 @@ address sections and put them in the center of page */
     transform: translate(-50%, -50%);
 }
 
-.address{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.contact{
+.introH1{
     position: absolute;
     top: 20%;
     left: 20%;
