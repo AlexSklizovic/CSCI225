@@ -71,3 +71,9 @@ th, td{
 .iframe{
     display: block;
 }
+
+ul li{
+    display: inline-table;
+    padding-right: 40px;
+    width: 100px;
+}
