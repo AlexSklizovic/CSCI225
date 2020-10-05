@@ -6,6 +6,43 @@ html{
     color: white;
 }
 
+/* Position || Use absolute position style for introduction, portfolio, schedule, contact and
+address sections and put them in the center of page */
+.introduction{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.schedule{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact_info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.address{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 th, td{
     border: 1px solid black;
     padding: 5px;
@@ -26,17 +63,7 @@ h1{
     bottom: 0;
 }
 
-.introduction{
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .assignment{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contact_info{
     margin-left: auto;
     margin-right: auto;
 }
