@@ -1,7 +1,8 @@
 /* Changing this whole thing to imitate dark mode with colorful text (Miami Vice) */
 
+/* Color */
 html{
-    background-color: hsla(0, 0%, 0%, 0.6);
+    background-color: hsla(0, 0%, 0%, 1);
     color: rgb(255, 255, 255)
   }
 
@@ -21,7 +22,7 @@ h1{
 }
 
 .footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
