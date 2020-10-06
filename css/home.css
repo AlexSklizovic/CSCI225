@@ -39,10 +39,16 @@ address sections and put them in the center of page */
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+/* H1 */
 .introH1{
     position: absolute;
     top: 20%;
+    left: 20%;
+}
+
+.assignmentH1{
+    position: absolute;
+    top: 40%;
     left: 20%;
 }
 
