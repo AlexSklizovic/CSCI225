@@ -13,6 +13,7 @@ h1{
 /* Position || Use absolute position style for introduction, portfolio, schedule, contact and
 address sections and put them in the center of page */
 .introduction{
+    visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,6 +21,7 @@ address sections and put them in the center of page */
 }
 
 .portfolio{
+    visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,6 +29,7 @@ address sections and put them in the center of page */
 }
 
 .schedule{
+    visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,6 +37,7 @@ address sections and put them in the center of page */
 }
 
 .contact_info{
+    visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
