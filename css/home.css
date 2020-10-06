@@ -46,6 +46,12 @@ address sections and put them in the center of page */
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+ul li{
+    display: inline-table;
+    padding-right: 40px;
+    width: 100px;
+}
 /* H1 */
 .introH1{
     position: absolute;
