@@ -4,20 +4,39 @@
 html{
     background-color: black;
     color: white;
+    background-image: url("../img/Vice.jpg");
 }
 
 h1{
-    color: rgb(11,211,211);
-    background-color: rgb(208,208,208);
+    color: rgb(255,211,25);
+    background-color: rgb(140,30,255);
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
 
-/* Position || Use absolute position style for introduction, portfolio, schedule, contact and
-address sections and put them in the center of page */
+.titleH1{
+    color: rgb(255,211,25);
+    background-color: rgb(140,30,255);
+    text-transform: uppercase;
+    position: absolute;
+    left: 60%;
+    transform: translate(-2%);
+}
+
+.titleH1:hover{
+    color: rgb(255,41,117);
+    background-color: black;
+}
+
+.titleH1:active{
+    transform: translate(-500%);
+}
+
+/* Introduction */
 .introduction{
     visibility: hidden;
     position: absolute;
+    background: rgb(140,30,255);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -25,135 +44,154 @@ address sections and put them in the center of page */
 
 .introduction h1{
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: -70%;
+    left: -70%;
     visibility: visible;
 }
 
-.portfolio{
+.introduction:hover{
+    visibility: visible;
+}
+
+/* Assignment */
+.assignment{
     visibility: hidden;
     position: absolute;
+    background: rgb(140,30,255);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.assignment h1{
+    position: absolute;
+    top: -275%;
+    left: 400%;
+    visibility: visible;
+}
+
+.assignment:hover{
+    visibility: visible;
+}
+
+/* Portfolio */
+.portfolio{
+    visibility: hidden;
+    position: absolute;
+    background: rgb(140,30,255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio h1{
+    position: absolute;
+    top: -70%;
+    left: -30%;
+    visibility: visible;
+}
+
+.portfolio:hover{
+    visibility: visible;
+}
+
+/* Schedule */
 .schedule{
     visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: black;
 }
 
+.schedule tr:nth-child(even){
+    background-color: rgb(242,34,255);
+}
+
+.schedule tr:nth-child(odd){
+    background-color: rgb(255,144,31);
+}
+
+.schedule h1{
+    position: absolute;
+    top: 30%;
+    left: 130%;
+    visibility: visible;
+}
+
+.schedule:hover{
+    visibility: visible;
+}
+
+/* Contact Info */
 .contact_info{
     visibility: hidden;
     position: absolute;
+    background: rgb(140,30,255);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.contact_info h1{
+    position: fixed;
+    left: -450%;
+    visibility: visible;
 }
 
 .contact_info:hover{
     visibility: visible;
 }
 
-.assignment{
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-div.navbar ul, div.navbar li{
+.navbar li{
     display: inline-table;
     padding-right: 40px;
+    left: 50%;
     width: 100px;
-}
-/* H1 */
-.introH1{
-    position: absolute;
-    top: 20%;
-    left: 20%;
-}
-
-.assignmentH1{
-    position: absolute;
-    top: 40%;
-    left: 20%;
-}
-
-.contactH1{
-    position: absolute;
-    top: 60%;
-    left: 20%;
-}
-
-.portfolioH1{
-    position: absolute;
-    top: 30%;
-    left: 80%;
-}
-
-.scheduleH1{
-    position: absolute;
-    top: 50%;
-    left: 80%;
 }
 
 th, td{
-    border: 1px solid rgb(248,144,231);
-    padding: 5px;
+    border: 5px solid black;
+    padding: 3px;
     text-align: center;
+    vertical-align: auto;
+    color: black;
+    empty-cells: show;
 }
-/* comme */
+
 .center{
     position: absolute;
-    left: 50%;
+    left: 80%;
     transform: translate(-50%);
 }
 
 .footer{
     position: fixed;
     bottom: 0;
-}
-
-.assignment{
-    margin-left: auto;
-    margin-right: auto;
+    background: black;
+    color: rgb(248,144,231);
 }
 
 .iframe{
     display: block;
 }
 
-.navbar{
-    display: inline-table;
-    padding: 40px;
-    width: 100px;
-}
-
 h1{
-    text-shadow: 0.3em 0.3em 0.1em bisque;
     border: black solid 1px;
     border-radius: 10px 20px 30px 30px;
     box-shadow: -10px -20px 10px black;
-    transition:ease-in-out 2s, transform 2s;   /* main element */
+    transition:ease-in-out 0.5s, transform 0.5s;
   }
   
 h1:hover{
-    transform:translate(20px,20px);
+    transform:translate(10px, 10px);
+
 }
   
 h1~p{
     opacity: 1;
-    transition: ease-in-out 2s, all 2s;
-}
-  
-h1:active ~p{
-    opacity:0;
-    transform: scale(0.2);
+    transition: ease-in-out 1s, all 1s;
 }
 
 p{
@@ -161,8 +199,16 @@ p{
     font-weight: 200;
     font-family: 'Orbitron', sans-serif;
     line-height: 1.4em;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px #ff901f;
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: rgb(255,41,117);
 }
 
 a:link { color: rgb(11,211,211); }          /* Unvisited links */
 a:visited { color: rgb(248,144,231); }     /* Visited links */
 a:active { color: rgb(11,211,211); }         /* Active links */
+a:hover {color: rgb(255,144,31);}
