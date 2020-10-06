@@ -165,5 +165,4 @@ p{
 
 a:link { color: rgb(11,211,211); }          /* Unvisited links */
 a:visited { color: rgb(248,144,231); }     /* Visited links */
-a:hover { background: rgb(208,208,208); }  /* Hovered links */
-a:active { color: green; }         /* Active links */
+a:active { color: rgb(11,211,211); }         /* Active links */
