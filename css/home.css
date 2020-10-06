@@ -66,7 +66,7 @@ address sections and put them in the center of page */
     transform: translate(-50%, -50%);
 }
 
-#navbaul li{
+div.navbar ul, div.navbar li{
     display: inline-table;
     padding-right: 40px;
     width: 100px;
