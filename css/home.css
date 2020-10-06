@@ -23,6 +23,12 @@ address sections and put them in the center of page */
     transform: translate(-50%, -50%);
 }
 
+.introduction h1{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
 .portfolio{
     visibility: hidden;
     position: absolute;
