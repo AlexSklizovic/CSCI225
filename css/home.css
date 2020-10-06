@@ -8,6 +8,9 @@ html{
 
 h1{
     color: rgb(11,211,211);
+    background-color: rgb(208,208,208);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 /* Position || Use absolute position style for introduction, portfolio, schedule, contact and
@@ -110,5 +113,9 @@ h1:active ~p{
 }
 
 p{
+    color: white;
+    font-weight: 200;
     font-family: 'Orbitron', sans-serif;
+    line-height: 1.4em;
+    /* text align */
 }
