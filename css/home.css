@@ -161,7 +161,6 @@ p{
     font-weight: 200;
     font-family: 'Orbitron', sans-serif;
     line-height: 1.4em;
-    /* text align */
 }
 
 a:link { color: rgb(11,211,211); }          /* Unvisited links */
