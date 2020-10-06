@@ -47,6 +47,14 @@ address sections and put them in the center of page */
     transform: translate(-50%, -50%);
 }
 
+.assignment{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 ul li{
     display: inline-table;
     padding-right: 40px;
