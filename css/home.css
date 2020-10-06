@@ -108,3 +108,7 @@ h1:active ~p{
     opacity:0;
     transform: scale(0.2);
 }
+
+p{
+    font-family: 'Orbitron', sans-serif;
+}
