@@ -47,6 +47,10 @@ address sections and put them in the center of page */
     transform: translate(-50%, -50%);
 }
 
+.contact_info:hover{
+    visibility: visible;
+}
+
 .assignment{
     visibility: hidden;
     position: absolute;
@@ -55,7 +59,7 @@ address sections and put them in the center of page */
     transform: translate(-50%, -50%);
 }
 
-#navbar ul li{
+#navbaul li{
     display: inline-table;
     padding-right: 40px;
     width: 100px;
