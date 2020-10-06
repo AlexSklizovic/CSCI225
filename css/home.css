@@ -55,7 +55,7 @@ address sections and put them in the center of page */
     transform: translate(-50%, -50%);
 }
 
-ul li{
+#navbar ul li{
     display: inline-table;
     padding-right: 40px;
     width: 100px;
