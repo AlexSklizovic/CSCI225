@@ -1,4 +1,25 @@
 /* HW 4 no more use of absolute or fixed positioning */
+
+/* Grid layout */
+.grid-container {
+    display: inline-grid;
+    grid-gap: 10px 100px;
+}
+
+.contactLeft{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.contactRight{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
 /* Color */
 html{
     background-color: black;

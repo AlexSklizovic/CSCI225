@@ -2,12 +2,37 @@
 <html>
     <head>
         <title>Contact Page</title>
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/home.css">
     </head>
 
     <body>
-        <div>
-            <iframe width="560" height="315" 
+        <div id="nav" class="navbar navbar-expand-lg fixed-top navbar-light p-3 mb-2 bg-dark text-white">
+
+            <ul class="navbar-nav font-weight-bold">
+                <li class="nav-item"><a href="../index.html">HOME</a></li>
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown">Navigation</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="/admissions">Admissions</a></li>
+                        <li class="dropdown-item"><a href="/admissions/freshmanadmissions.dot">Freshman/Transfer Admissions</a>
+                        <li class="dropdown-item"><a href="/graduate-admissions/index.dot">Graduate Admissions</a></li>
+                        <li class="dropdown-item"><a href="/admissions/concurrent-admissions.dot">Concurrent Admissions</a></li>
+                        <li class="dropdown-item"><a href="/housing/">Housing</a></li>
+                        <li class="dropdown-item"><a href="/student-involvement/">Student Involvement</a></li>
+                        <li class="dropdown-item"><a href="/financialaid/">Financial Aid</a></li>
+                        <li><a href="/admissions/apply-now.dot">Apply Now</a></li>
+                    </ul>
+                </li>
+    
+            </ul>
+    
+    
+        </div>
+        
+    <div class = "grid-container">
+       <div class = "contactLeft">
+            <iframe class = "rounded border border-success position-relative" width="560" height="315" 
                 src="https://www.youtube.com/embed/eYzCSZqG0XM" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -15,27 +40,42 @@
             </iframe>
         </div>
 
+    <div class = "contactRight">
         <h1>Contact Me!</h1>
         <form name="feedback">
+       
+            <div class = "form-group">
             <label>First Name: 
-                <input type="text" 
+                <input class = "form-control" type="text" 
                 name="fname"
                 placeholder="anonymous"
                 required></label><br>
-
+            </div>
+       
+            <div class = "form-group">
            <label>Last Name: 
-                <input type="text" 
+                <input class = "form-control" type="text" 
                 name="lname"
                 placeholder="anonymous"
                 required></label><br>
-                
+            </div>
+        
+            <div class = "form-group">
             <label>Email:  
-                <input type="email"
+                <input class = "form-control" type="email"
                 name="mail"
                 placeholder="name@domain.com"
                 required></label><br>
+            </div>
 
-            <p>Recommend to a friend?</p>
+            <label for="pass">Password (8 characters minimum):</label>
+            <input type="password" id="pass" name="password"
+                                minlength="8" required>
+            
+            <small class="form-text text-muted"> Your password must be 8 characters long!</small><br>
+        
+            <label>Recommend to a friend?</label>
+            <div class = "form-check"></div>
             <label>Yes
                 <input type = "radio"
                 name="YesRadio"
@@ -46,18 +86,24 @@
                 name="NoRadio"
                 value = "No">
             </label><br>
+            </div>
 
-            <p>Favorite websites?</p>
-            <label><input type = "checkbox" name = "facebook">Facebook</label>
-            <label><input type = "checkbox" name = "twitter">Twitter</label>
-            <label><input type = "checkbox" name = "google">Google</label>
-            <label><input type = "checkbox" name = "youtube">YouTube</label>
-            <label><input type = "checkbox" name = "instagram">Instagram</label>
-            <label><input type = "checkbox" name = "linkedin">LinkedIn</label><br>
+            <label>Favorite websites?</label>
+            <div class = "form-check">
+                <label><input type = "checkbox" name = "facebook">Facebook</label>
+                <label><input type = "checkbox" name = "twitter">Twitter</label>
+                <label><input type = "checkbox" name = "google">Google</label>
+                <label><input type = "checkbox" name = "youtube">YouTube</label>
+                <label><input type = "checkbox" name = "instagram">Instagram</label>
+                <label><input type = "checkbox" name = "linkedin">LinkedIn</label><br>
+            </div>
 
             <!--<label>Rate my website!<input type ="range" name = "rating" min = "1" max = "10"></label>-->
-            <label>Rate my website!<input type ="range" name = "rating" min = "1" max = "10" list = "tickmarks"></label><br><br>
-            
+            <div class = "form-group">
+                <label>Rate my website!<input class = "form-range" type ="range" name = "rating" min = "1" max = "10" list = "tickmarks"></label><br><br>
+            </div>
+
+            <div class = "form-group">
             <datalist id="tickmarks">
                 <option value="1"></option>
                 <option value="2"></option>
@@ -70,24 +116,42 @@
                 <option value="9"></option>
                 <option value="10"></option>
               </datalist>
+            </div>
 
-              <label>Favorite Internet Browser?<select size = "1" name = "browser">
+            <div class = "form-group">
+              <label>Favorite Internet Browser?<select class = "form-control" size = "1" name = "browser">
                   <option value = "Internet Explorer">Internet Explorer</option>
                   <option value = "Google Chrome">Google Chrome</option>
                   <option value = "Microsoft Edge">Microsoft Edge</option>
                   <option value = "Safari">Safari</option>
                   <option value = "FireFox">FireFox</option>
               </select></label><br><br>
+            </div>
 
-              <label><textarea name = "comment" rows = "10" cols = "20">Leave a comment here!</textarea></label><br>
+            <div class = "form-group">
+              <label><textarea class = "form-control text-md-left" name = "comment" rows = "10" cols = "20">Leave a comment here!</textarea></label><br>
 
               <label>Tel:<input type = "tel" placeholder = "(###)###-####" pattern = "\(\d{3}\)\d{3}-\d{4}" required></label><br>
 
               <label>Birthday<input type = "date" name = "birthday"></label><br>
 
               <input type = "submit" value = "Submit"><br>
-        </form>
+            </div>
+
+            </form>
+        </div>
+    </div>
 
         <div class ="footer">&copy; Alex Sklizovic 2020</div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     </body>
 </html>
