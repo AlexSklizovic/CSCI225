@@ -24,7 +24,7 @@
             </select>
 
             <label>=
-                <input class = "form-control" type="number" 
+                <input class = "form-control" type="text" 
                 id="Result"
                 placeholder="0">
            </label>
@@ -38,86 +38,131 @@
                 <option value="Meters">Meters</option>
             </select>
 
-        </div>
+            <label>
+                <input type = "button" id = "subBut" value = "Submit">
+            </label>
+
+            <p id = "testP">
+
+            </p>
 
         <script>
-            let inVal = document.getElementById("input").value;
-            
-            switch(document.getElementById("length1").value + "|" + document.getElementById("length2").value){
-                case "Inches|Inches":
-                    break;
-                case "Inches|Feet":
-                    break;
-                case "Inches|Yards":
-                    break;
-                case "Inches|Millimeters":
-                    break;
-                case "Inches|Centimeters":
-                    break;
-                case "Inches|Meters":
-                    break;
-                case "Feet|Inches":
-                    break;
-                case "Feet|Feet":
-                    break;
-                case "Feet|Yards":
-                    break;
-                case "Feet|Millimeters":
-                    break;
-                case "Feet|Centimeters":
-                    break;
-                case "Feet|Meters":
-                    break;
-                case "Yards|Inches":
-                    break;
-                case "Yards|Feet":
-                    break;
-                case "Yards|Yards":
-                    break;
-                case "Yards|Millimeters":
-                    break;
-                case "Yards|Centimeters":
-                    break;
-                case "Yards|Meters":
-                    break;
-                case "Millimeters|Inches":
-                    break;
-                case "Millimeters|Feet":
-                    break;
-                case "Millimeters|Yards":
-                    break;
-                case "Millimeters|Millimeters":
-                    break;
-                case "Millimeters|Centimeters":
-                    break;
-                case "Millimeters|Meters":
-                    break;
-                case "Centimeters|Inches":
-                    break;
-                case "Centimeters|Feet":
-                    break;
-                case "Centimeters|Yards":
-                    break;
-                case "Centimeters|Millimeters":
-                    break;
-                case "Centimeters|Centimeters":
-                    break;
-                case "Centimeters|Meters":
-                    break;
-                case "Meters|Inches":
-                    break;
-                case "Meters|Feet":
-                    break;
-                case "Meters|Yards":
-                    break;
-                case "Meters|Millimeters":
-                    break;
-                case "Meters|Centimeters":
-                    break;
-                case "Meters|Meters":
-                    break;
+            document.getElementById('subBut').addEventListener('click', convCalc);
+           
+            function convCalc(){
+                let inputNum = parseFloat(document.getElementById("Input").value);
+                switch(document.getElementById("length1").value + "|" + document.getElementById("length2").value){
+                    case "Inches|Inches":
+                        document.getElementById("Result").value = inputNum;
+                        break;
+                    case "Inches|Feet":
+                        document.getElementById("Result").value = inputNum / 12;
+                        break;
+                    case "Inches|Yards":
+                        document.getElementById("Result").value = inputNum / 36;
+                        break;
+                    case "Inches|Millimeters":
+                        document.getElementById("Result").value = inputNum * 25.4;
+                        break;
+                    case "Inches|Centimeters":
+                        document.getElementById("Result").value = inputNum * 2.54;
+                        break;
+                    case "Inches|Meters":
+                        document.getElementById("Result").value = inputNum * 0.0254;
+                        break;
+                    case "Feet|Inches":
+                        document.getElementById("Result").value = inputNum * 12;
+                        break;
+                    case "Feet|Feet":
+                        document.getElementById("Result").value = inputNum;
+                        break;
+                    case "Feet|Yards":
+                        document.getElementById("Result").value = inputNum / 3;
+                        break;
+                    case "Feet|Millimeters":
+                        document.getElementById("Result").value = inputNum * 304.8;
+                        break;
+                    case "Feet|Centimeters":
+                        document.getElementById("Result").value = inputNum * 30.48;
+                        break;
+                    case "Feet|Meters":
+                        document.getElementById("Result").value = inputNum * 0.3048;
+                        break;
+                    case "Yards|Inches":
+                        document.getElementById("Result").value = inputNum * 36;
+                        break;
+                    case "Yards|Feet":
+                        document.getElementById("Result").value = inputNum * 3;
+                        break;
+                    case "Yards|Yards":
+                        document.getElementById("Result").value = inputNum;
+                        break;
+                    case "Yards|Millimeters":
+                        document.getElementById("Result").value = inputNum * 914.4;
+                        break;
+                    case "Yards|Centimeters":
+                        document.getElementById("Result").value = inputNum * 91.44;
+                        break;
+                    case "Yards|Meters":
+                        document.getElementById("Result").value = inputNum * 0.9144;
+                        break;
+                    case "Millimeters|Inches":
+                        document.getElementById("Result").value = inputNum * 0.0393701;
+                        break;
+                    case "Millimeters|Feet":
+                        document.getElementById("Result").value = inputNum * 0.00328084;
+                        break;
+                    case "Millimeters|Yards":
+                        document.getElementById("Result").value = inputNum * 0.00109361;
+                        break;
+                    case "Millimeters|Millimeters":
+                        document.getElementById("Result").value = inputNum;
+                        break;
+                    case "Millimeters|Centimeters":
+                        document.getElementById("Result").value = inputNum * 0.1;
+                        break;
+                    case "Millimeters|Meters":
+                        document.getElementById("Result").value = inputNum * 0.001;
+                        break;
+                    case "Centimeters|Inches":
+                        document.getElementById("Result").value = inputNum * 0.393701;
+                        break;
+                    case "Centimeters|Feet":
+                        document.getElementById("Result").value = inputNum * 0.0328084;
+                        break;
+                    case "Centimeters|Yards":
+                        document.getElementById("Result").value = inputNum * 0.0109361;
+                        break;
+                    case "Centimeters|Millimeters":
+                        document.getElementById("Result").value = inputNum * 10;
+                        break;
+                    case "Centimeters|Centimeters":
+                        document.getElementById("Result").value = inputNum;
+                        break;
+                    case "Centimeters|Meters":
+                        document.getElementById("Result").value = inputNum * 0.01;
+                        break;
+                    case "Meters|Inches":
+                        document.getElementById("Result").value = inputNum * 39.3701;
+                        break;
+                    case "Meters|Feet":
+                        document.getElementById("Result").value = inputNum * 3.28084;
+                        break;
+                    case "Meters|Yards":
+                        document.getElementById("Result").value = inputNum * 1.09361;
+                        break;
+                    case "Meters|Millimeters":
+                        document.getElementById("Result").value = inputNum * 1000;
+                        break;
+                    case "Meters|Centimeters":
+                        document.getElementById("Result").value = inputNum * 100;
+                        break;
+                    case "Meters|Meters":
+                        document.getElementById("Result").value = inputNum;
+                        break;
+                }
             }
         </script>
-
+        </div>
     </form>
 </body>
