@@ -32,7 +32,18 @@
                         document.getElementById('subButCar').addEventListener('click', runDiagnostics);
 
                         function runDiagnostics(){
-                            
+                            if(document.getElementById("rad1").checked == true){
+                                $(".form-group h3").html("Engine Fires?");
+                                document.getElementById("rad1").checked = false;
+                                if(document.getElementById("subButCar").clicked == true && document.getElementById("rad1").checked == true){
+                                    $(".form-group h3").html("Starts and stalls?");
+                                    document.getElementById("rad1").checked = false;
+                                    if(document.getElementById("subButCar").clicked == true && document.getElementById("rad1").checked == true){
+                                        $(".form-group h3").html("Check OBD, blink code?");
+                                        document.getElementById("rad1").checked = false;
+                                    }
+                                }
+                            }
                         }
                     </script>
                 </div>
