@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car Problem Diagnostic Quiz</title>
+        <link rel="stylesheet" type="text/css" href="../css/carDiagnosis.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <h1>What to do when your car can not start...</h1>
+
+        <div class ="boxed">
+            
+            <form name = "cDiagnos">
+                <div class = "form-group">
+                    <h3 id = "carQ">Starter cranks?</h4>
+                    <label>
+                        <input type = "radio" id = "rad1" name = "carRadBut" value = "1">Yes
+                    </label>
+
+                    <label>
+                        <input type = "radio" id = "rad2" name = "carRadBut" value = "2">No
+                    </label><br><br>
+
+                    <label>
+                        <input type = "button" id = "subButCar" value = "Submit">
+                    </label>
+
+                    <script>
+                        document.getElementById('subButCar').addEventListener('click', runDiagnostics);
+
+                        function runDiagnostics(){
+                            
+                        }
+                    </script>
+                </div>
+            </form>
+        </div>
+
+        <div class ="footer">&copy; This diagnostic tool is based on a chart by Morris Rosenthal SOURCE: <a href = "https://www.ifitjams.com/starting.htm" target = "_blank">https://www.ifitjams.com/starting.htm</a></div>
+
+    </body>
+</html>
